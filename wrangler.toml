@@ -1,4 +1,4 @@
-name = "wallpaper-site"
+name = "tuku"
 main = "workers/index.js"  # 指向你的Worker入口文件
 compatibility_date = "2025-07-04"
 
