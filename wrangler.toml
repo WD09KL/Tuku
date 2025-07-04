@@ -1,0 +1,12 @@
+name = "wallpaper-site"
+main = "workers/index.js"
+compatibility_date = "2023-08-15"
+
+# 配置Pages集成
+[site]
+bucket = "./public"
+entry-point = "."
+
+# 配置环境变量
+[vars]
+PIXABAY_API_KEY = "51138095-799c800606b8caadc071fcb56"    

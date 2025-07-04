@@ -1,0 +1,14 @@
+{
+  "name": "wallpaper-site",
+  "version": "1.0.0",
+  "description": "Cloudflare Workers壁纸网站",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:pages": "wrangler pages deploy public"
+  },
+  "dependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "devDependencies": {}
+}    
