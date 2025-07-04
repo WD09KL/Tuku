@@ -1,8 +1,7 @@
-name = "wallpaper-site"
-main = "workers/index.js"  # 指向你的Worker入口文件
+name = "tuku"  # 修改为CI系统期望的名称
+main = "workers/index.js"
 compatibility_date = "2025-07-04"
 
 [site]
-bucket = "./public"  # 静态文件目录
-# 删除下面这行已被弃用的配置
-# entry-point = "."
+bucket = "./public"
+# 删除已弃用的 entry-point 字段
