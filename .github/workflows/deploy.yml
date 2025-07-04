@@ -13,16 +13,10 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Install Wrangler
-        run: npm install --save-dev wrangler@4
+        run: npm install -g wrangler@4
       
       - name: Deploy Workers
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: |
-          wrangler deploy
-      
-      - name: Deploy Pages
-        env:
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-        run: |
-          wrangler pages deploy public --branch=main    
+          wrangler deploy --name tuku  # 明确指定Worker名称
